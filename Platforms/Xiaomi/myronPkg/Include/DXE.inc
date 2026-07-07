@@ -18,7 +18,6 @@
   INF EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
   INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
   INF MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
-  INF DevicesBinaries/myron/QcomPkg/Drivers/FontDxe/FontDxe.inf
   INF DevicesBinaries/myron/QcomPkg/Drivers/QcomWDogDxe/QcomWDogDxe.inf
   INF ArmPkg/Drivers/ArmGicDxe/ArmGicDxe.inf
   INF ArmPkg/Drivers/TimerDxe/TimerDxe.inf
