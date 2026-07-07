@@ -9,10 +9,13 @@ import glob
 import gzip
 import shutil
 import subprocess
+try:
+    import tomllib
+except ModuleNotFoundError:
+    import tomli as tomllib
 import coloredlogs
 import argparse
 import logging
-import tomllib
 
 #
 # Logger
