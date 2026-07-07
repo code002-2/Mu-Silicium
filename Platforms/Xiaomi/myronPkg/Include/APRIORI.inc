@@ -1,0 +1,107 @@
+APRIORI DXE {
+  INF MdeModulePkg/Core/Dxe/DxeMain.inf
+  INF MdeModulePkg/Universal/PCD/Dxe/Pcd.inf
+  INF QcomPkg/Drivers/IortDtDxe/IortDtDxe.inf
+
+  INF DevicesBinaries/myron/QcomPkg/Drivers/EnvDxe/EnvDxeEnhanced.inf
+  INF MdeModulePkg/Universal/ReportStatusCodeRouter/RuntimeDxe/ReportStatusCodeRouterRuntimeDxe.inf
+  INF MdeModulePkg/Universal/StatusCodeHandler/RuntimeDxe/StatusCodeHandlerRuntimeDxe.inf
+  INF MdeModulePkg/Core/RuntimeDxe/RuntimeDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/QcomWDogDxe/QcomWDogDxe.inf
+
+  INF ArmPkg/Drivers/CpuDxe/CpuDxe.inf
+  INF ArmPkg/Drivers/ArmGicDxe/ArmGicDxe.inf
+  INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
+  INF ArmPkg/Drivers/TimerDxe/TimerDxe.inf
+
+  INF DevicesBinaries/myron/QcomPkg/Drivers/SmemDxe/SmemDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/DALSYSDxe/DALSYSDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/HWIODxe/HWIODxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/ChipInfoDxe/ChipInfoDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/PlatformInfoDxe/PlatformInfoDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/HALIOMMUDxe/HALIOMMUDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/ULogDxe/ULogDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/IPCCDxe/IPCCDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/CmdDbDxe/CmdDbDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/PwrUtilsDxe/PwrUtilsDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/NpaDxe/NpaDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/RpmhDxe/RpmhDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/MailboxDxe/MailboxDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/QcomScmiDxe/QcomScmiDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/CalibrationDxe/CalibrationDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/VcsDxe/VcsDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/ClockDxe/ClockDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/ICBDxe/ICBDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/ShmBridgeDxe/ShmBridgeDxeLA.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/TzDxe/ScmDxeCompat.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/TLMMDxe/TLMMDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/QupDxe/QupDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/I2CDxe/I2CDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/I3CMasterDxe/I3CMasterDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/SPMIDxe/SPMIDxe.inf
+
+  INF MdeModulePkg/Universal/ResetSystemRuntimeDxe/ResetSystemRuntimeDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/PmicDxe/PmicDxeLa.inf
+  INF DevicesBinaries/myron/MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf
+  INF DevicesBinaries/myron/MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.inf
+  INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/SdccDxe/SdccDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/UFSDxe/UFSDxe.inf
+  INF FatPkg/EnhancedFatDxe/Fat.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/TzDxe/TzDxeLA.inf
+  INF MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
+
+  INF DevicesBinaries/myron/QcomPkg/Drivers/DDRInfoDxe/DDRInfoDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/FeatureEnablerDxe/FeatureEnablerDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/PILProxyDxe/PILProxyDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/PILDxe/PILDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/SPSSDxe/SPSSDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/GLinkDxe/GLinkDxe.inf
+
+  INF MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
+  INF MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf
+  INF EmbeddedPkg/EmbeddedMonotonicCounter/EmbeddedMonotonicCounter.inf
+  INF EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
+  INF MdeModulePkg/Universal/PrintDxe/PrintDxe.inf
+  INF MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
+  INF MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf
+  INF MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
+  INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
+
+  INF DevicesBinaries/myron/QcomPkg/Drivers/SPIDxe/SPIDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/HSUartDxe/HSUartDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/PmicGlinkDxe/PmicGlinkSoccpDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/UsbPwrCtrlDxe/UsbPwrCtrlDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/QcomChargerDxe/QcomChargerDxeLAGio.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/ChargerExDxe/ChargerExDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/UsbfnDwc3Dxe/UsbfnDwc3Dxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/XhciPciEmulationDxe/XhciPciEmulationDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/XhciDxe/XhciDxe.inf
+  INF MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe.inf
+  INF MdeModulePkg/Bus/Usb/UsbKbDxe/UsbKbDxe.inf
+  INF MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/UsbMsdDxe/UsbMsdDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/UsbDeviceDxe/UsbDeviceDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/UsbConfigDxe/UsbConfigDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/ButtonsDxe/ButtonsDxe.inf
+
+!if $(USE_CUSTOM_DISPLAY_DRIVER) == 1
+  INF DevicesBinaries/myron/QcomPkg/Drivers/DisplayDxe/DisplayDxe.inf
+!else
+  INF SiliciumPkg/Drivers/SimpleFbDxe/SimpleFbDxe.inf
+!endif
+
+  INF DevicesBinaries/myron/QcomPkg/Drivers/TsensDxe/TsensDxe.inf
+!if $(USE_CUSTOM_DISPLAY_DRIVER) == 1
+  INF DevicesBinaries/myron/QcomPkg/Drivers/CPRDxe/CPRDxe.inf
+!endif
+  INF DevicesBinaries/myron/QcomPkg/Drivers/GpiDxe/GpiDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/UCDxe/UCDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/RNGDxe/RngDxe.inf
+  INF EmbeddedPkg/SimpleTextInOutSerial/SimpleTextInOutSerial.inf
+  INF MdeModulePkg/Universal/Console/ConPlatformDxe/ConPlatformDxe.inf
+  INF MdeModulePkg/Universal/Console/ConSplitterDxe/ConSplitterDxe.inf
+  INF MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/RscDxe/RscDxe.inf
+  INF DevicesBinaries/myron/QcomPkg/Drivers/RmVmDxe/RmVmDxe.inf
+}

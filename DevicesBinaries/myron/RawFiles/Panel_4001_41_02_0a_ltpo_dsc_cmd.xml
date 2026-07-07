@@ -1,0 +1,135 @@
+<?xml version=\"1.0\" encoding=\"utf-8\"?>
+<PanelDescription>41 02 0a Single DSI Cmd Mode LTPO Panel with DSC (1256x2760 30bpp)</PanelDescription>
+<Group id=\"Active Timing\">
+ <HorizontalActive>1256</HorizontalActive>
+ <HorizontalFrontPorch>36</HorizontalFrontPorch>
+ <HorizontalBackPorch>24</HorizontalBackPorch>
+ <HorizontalSyncPulse>32</HorizontalSyncPulse>
+ <HorizontalSyncSkew>0</HorizontalSyncSkew>
+ <HorizontalLeftBorder>0</HorizontalLeftBorder>
+ <HorizontalRightBorder>0</HorizontalRightBorder>
+ <VerticalActive>2760</VerticalActive>
+ <VerticalFrontPorch>86</VerticalFrontPorch>
+ <VerticalBackPorch>32</VerticalBackPorch>
+ <VerticalSyncPulse>32</VerticalSyncPulse>
+ <VerticalSyncSkew>0</VerticalSyncSkew>
+ <VerticalTopBorder>0</VerticalTopBorder>
+ <VerticalBottomBorder>0</VerticalBottomBorder>
+ <InvertDataPolarity>False</InvertDataPolarity>
+ <InvertVsyncPolairty>False</InvertVsyncPolairty>
+ <InvertHsyncPolarity>False</InvertHsyncPolarity>
+ <BorderColor>0x0</BorderColor>
+</Group>
+<Group id="Display Interface">
+ <InterfaceType>9</InterfaceType>
+ <InterfaceColorFormat>3</InterfaceColorFormat>
+</Group>
+<Group id="DSI Interface">
+ <DSIChannelId>2</DSIChannelId>
+ <DSIVirtualId>0</DSIVirtualId>
+ <DSIFlags>0x28</DSIFlags>
+ <DSIColorFormat>36</DSIColorFormat>
+ <DSITrafficMode>1</DSITrafficMode>
+ <DSILanes>4</DSILanes>
+ <DSIRefreshRate>0x780000</DSIRefreshRate>
+ <DSIBitClockFrequency>1198000000</DSIBitClockFrequency>
+ <DSIDSCEnable>True</DSIDSCEnable>
+ <DSIDSCMajor>1</DSIDSCMajor>
+ <DSIDSCMinor>2</DSIDSCMinor>
+ <DSIDSCScr>0</DSIDSCScr>
+ <DSIDSCProfileID>0xB</DSIDSCProfileID>
+ <DSIDSCSliceWidth>628</DSIDSCSliceWidth>
+ <DSIDSCSliceHeight>20</DSIDSCSliceHeight>
+ <DSIDSCSlicePerPacket>2</DSIDSCSlicePerPacket>
+ <DSICmdSwapInterface>False</DSICmdSwapInterface>
+ <DSICmdUsingTrigger>False</DSICmdUsingTrigger>
+ <DSIEnableAutoRefresh>True</DSIEnableAutoRefresh>
+ <DSIAutoRefreshFrameNumDiv>1</DSIAutoRefreshFrameNumDiv>
+ <DSITECheckEnable>True</DSITECheckEnable>
+ <DSITEUsingDedicatedTEPin>True</DSITEUsingDedicatedTEPin>
+ <DSITEvSyncStartPos>2760</DSITEvSyncStartPos>
+ <DSITEvSyncInitVal>2760</DSITEvSyncInitVal>
+ <DSILP11AtInit>True</DSILP11AtInit>
+ <DSIControllerMapping>
+  00
+ </DSIControllerMapping>
+</Group>
+<DSIInitRCOnSequence>
+ 39 F0 55 AA 52 08 07
+ 15 C0 07
+ 39 F0 55 AA 52 08 00
+ 39 D5 68 00
+ 15 6F 09
+ 15 D5 0C
+ 15 6F 4D
+ 15 D5 0C
+ 15 6F 4D
+ 15 D5 01
+ 15 6F 29
+ 15 D5 01
+ 15 6F 19
+ 15 D5 08
+</DSIInitRCOnSequence>
+<DSIInitSequence>
+ 39 5F 00 00
+ 39 81 01 19
+ 39 2A 00 00 04 E7
+ 39 2B 00 00 0A C7
+ 39 90 03 43
+ 39 91 89 28 00 14 C2 00 02 3B 02 0D 00 08 05 0E 04 4D 10 D0
+ 15 26 00
+ 15 35 00
+ 15 53 24
+ 39 51 1F FF
+ 15 6F 04
+ 39 51 05 54
+ 15 6D 00
+ 15 2F 0C
+ 15 6F 02
+ 05 11
+ FF 78
+ 05 29
+ 39 F0 55 AA 52 08 00
+ 15 6F 05
+ 15 BE 1D
+</DSIInitSequence>
+<DSITermSequence>
+ 05 28
+ FF 14
+ 05 10
+ FF 64
+</DSITermSequence>
+<PanelBuildIDAddr>0xDA</PanelBuildIDAddr>
+<PanelBuildIDReadBack>10 40</PanelBuildIDReadBack>
+<PanelBuildIDRemap>01 10</PanelBuildIDRemap>
+<DisplayResetGpio>98</DisplayResetGpio>
+<DisplayTEGpio>86</DisplayTEGpio>
+<DisplayTEFuncSel>1</DisplayTEFuncSel>
+<DisplayVDDDGpio>90</DisplayVDDDGpio>
+<DisplayOtherGpio1>13</DisplayOtherGpio1>
+
+<!-- SQC(hex): type-high/low-delay(ms) -->
+<!-- type: 0-invalid 1-te 2-reset 3-VDDI
+           4-VDDD 5-VCI 6-OtherGpio1 7-OtherGpio2 -->
+<PowerOnSequence>
+ 1 1 0
+ 3 1 0
+ 5 1 0
+ 6 1 0
+</PowerOnSequence>
+
+<PowerOffSequence>
+ 2 0 0
+ 1 0 0
+ 4 0 0
+</PowerOffSequence>
+
+<Group id='Backlight Configuration'>
+ <BacklightType>3</BacklightType>
+ <BacklightBitWidth>13</BacklightBitWidth>
+ <BacklightDefault90NitDbv>916</BacklightDefault90NitDbv>
+ <BacklightDefault>15</BacklightDefault>
+ <BacklightSetAfterRenderLogo>True</BacklightSetAfterRenderLogo>
+ <LowBatteryClearScreen>True</LowBatteryClearScreen>
+ <DisplayResetInfo>5 1000 1000 22000 0</DisplayResetInfo>
+</Group>

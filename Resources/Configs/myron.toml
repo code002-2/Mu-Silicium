@@ -1,0 +1,18 @@
+[boot_shim]
+requires_kernel_header = true
+
+[uefi_fd]
+fd_base = 0xC6900000
+fd_size = 0x300000
+
+[boot_image]
+requires_boot_shim = true
+kernel_compression = "gzip"
+dtb_location       = "kernel"
+header_version     = 4
+base               = 0x0
+kernel_offset      = 0x8000
+ramdisk_offset     = 0x1000000
+tags_offset        = 0x100
+pagesize           = 4096
+cmdline            = ""
