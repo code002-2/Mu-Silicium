@@ -26,7 +26,7 @@ jobs:
 
       - name: Build UEFI for myron
         run: |
-          export GCC5_AARCH64_PREFIX=aarch64-linux-gnu-
+          export CLANGPDB_AARCH64_PREFIX=aarch64-linux-gnu-
           python3 build_uefi.py -d myron -r ${{ inputs.build_mode || 'DEBUG' }}
 
       - name: Upload UEFI image
