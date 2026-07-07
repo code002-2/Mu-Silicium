@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt install -y pip git build-essential uuid-dev nasm gcc-aarch64-linux-gnu python3 python3-pip gettext gnupg ca-certificates clang llvm curl lld
+          sudo apt install -y pip git build-essential uuid-dev nasm gcc-aarch64-linux-gnu python3 python3-pip gettext gnupg ca-certificates clang llvm curl lld mono-devel nuget
           python3 -m pip install -r pip-requirements.txt
 
       - name: Build UEFI for myron
