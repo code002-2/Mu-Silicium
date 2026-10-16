@@ -1,0 +1,118 @@
+#
+# DXE driver list for ktm, taken from the device's own UEFI FV
+# (UEFIReader extraction of the stock `uefi_a` partition) and adjusted for the
+# Mu-Silicium driver substitutions.
+#
+
+  INF MdeModulePkg/Core/Dxe/DxeMain.inf
+  INF Binaries/ktm/QcomPkg/Drivers/EnvDxe/EnvDxeEnhanced.inf
+  INF MdeModulePkg/Universal/ReportStatusCodeRouter/RuntimeDxe/ReportStatusCodeRouterRuntimeDxe.inf
+  INF MdeModulePkg/Universal/StatusCodeHandler/RuntimeDxe/StatusCodeHandlerRuntimeDxe.inf
+  INF ArmPkg/Drivers/CpuDxe/CpuDxe.inf
+  INF MdeModulePkg/Core/RuntimeDxe/RuntimeDxe.inf
+  INF MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/ShmBridgeDxe/ShmBridgeDxeLA.inf
+  INF Binaries/ktm/QcomPkg/Drivers/TzDxe/ScmDxeCompat.inf
+  INF Binaries/ktm/QcomPkg/Drivers/TzDxe/TzDxeLA.inf
+  INF Binaries/ktm/QcomPkg/Drivers/PsStateDxe/PsStateDxe.inf
+  INF MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
+  INF MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf
+  INF MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
+  INF EmbeddedPkg/EmbeddedMonotonicCounter/EmbeddedMonotonicCounter.inf
+  INF MdeModulePkg/Universal/ResetSystemRuntimeDxe/ResetSystemRuntimeDxe.inf
+  INF EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
+  INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
+  INF MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/FontDxe/FontDxe.inf
+  INF ArmPkg/Drivers/ArmGicDxe/ArmGicDxe.inf
+  INF ArmPkg/Drivers/TimerDxe/TimerDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/ChipInfoDxe/ChipInfoDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/PlatformInfoDxe/PlatformInfoDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/DALSYSDxe/DALSYSDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/HALIOMMUDxe/HALIOMMUDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/HWIODxe/HWIODxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/HSUartDxe/HSUartDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/I2CDxe/I2CDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/TLMMDxe/TLMMDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/QupDxe/QupDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/PmicDxe/PmicDxeLa.inf
+  INF MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/CmdDbDxe/CmdDbDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/PwrUtilsDxe/PwrUtilsDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/RpmhDxe/RpmhDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/NpaDxe/NpaDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/ULogDxe/ULogDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/MailboxDxe/MailboxDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/QcomScmiDxe/QcomScmiDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/VcsDxe/VcsDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/ClockDxe/ClockDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/SPMIDxe/SPMIDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/ICBDxe/ICBDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/SmemDxe/SmemDxe.inf
+  INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/RscDxe/RscDxe.inf
+  INF EmbeddedPkg/SimpleTextInOutSerial/SimpleTextInOutSerial.inf
+  INF MdeModulePkg/Universal/PrintDxe/PrintDxe.inf
+  INF MdeModulePkg/Universal/Console/ConPlatformDxe/ConPlatformDxe.inf
+  INF MdeModulePkg/Universal/Console/ConSplitterDxe/ConSplitterDxe.inf
+  INF MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe.inf
+!if $(USE_CUSTOM_DISPLAY_DRIVER) == 1
+  INF Binaries/ktm/QcomPkg/Drivers/CPRDxe/CPRDxe.inf
+!endif
+  INF Binaries/ktm/QcomPkg/Drivers/GpiDxe/GpiDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/SPIDxe/SPIDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/SdccDxe/SdccDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/FeatureEnablerDxe/FeatureEnablerDxe.inf
+!if $(USE_CUSTOM_DISPLAY_DRIVER) == 1
+  INF Binaries/ktm/QcomPkg/Drivers/DisplayDxe/DisplayDxe.inf
+!else
+  INF SiliciumPkg/Drivers/SimpleFbDxe/SimpleFbDxe.inf
+!endif
+  INF Binaries/ktm/QcomPkg/Drivers/QRKSDxe/QRKSDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/ButtonsDxe/ButtonsDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/ChargerExDxe/ChargerExDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/IPCCDxe/IPCCDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/GLinkDxe/GLinkDxe.inf
+  #
+  # Storage stack.  Restored after the v14 "no storage" experiment: UFSDxe
+  # installs MemCardInfoProtocol (85C1F7D2-BCE6-4F31-8F4D-D37E03D05EAA), which
+  # OcdtDxe/OplusProject.Get_Current_Slot() LocateProtocol()s and then calls
+  # through without a NULL check -> jumps to address 0 if it is missing.
+  # It must therefore be dispatched before OplusProject.
+  #
+  INF Binaries/ktm/MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf
+  INF Binaries/ktm/MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.inf
+  INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/UFSDxe/UFSDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/OplusStorageDxe/OplusStorageDxe.inf
+  INF FatPkg/EnhancedFatDxe/Fat.inf
+  INF Binaries/ktm/QcomPkg/Drivers/OcdtDxe/OplusProject.inf
+  INF Binaries/ktm/QcomPkg/Drivers/PmicGlinkDxe/PmicGlinkDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/QcomChargerDxe/QcomChargerDxeLA.inf
+  INF Binaries/ktm/QcomPkg/Drivers/PhoenixDxe/PhoenixDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/Phoenix2_0Dxe/Phoenix2_0Dxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/UsbPwrCtrlDxe/UsbPwrCtrlDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/TsensDxe/TsensDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/DDRInfoDxe/DDRInfoDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/UsbfnDwc3Dxe/UsbfnDwc3Dxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/XhciPciEmulationDxe/XhciPciEmulationDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/XhciDxe/XhciDxe.inf
+  INF MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe.inf
+  INF MdeModulePkg/Bus/Usb/UsbKbDxe/UsbKbDxe.inf
+  INF MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/UsbMsdDxe/UsbMsdDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/UsbDeviceDxe/UsbDeviceDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/UsbConfigDxe/UsbConfigDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/UsbInitDxe/UsbInitDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/UCDxe/UCDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/RNGDxe/RngDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/PILDxe/PILDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/PILProxyDxe/PILProxyDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/SecRSADxe/SecRSADxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/ASN1X509Dxe/ASN1X509Dxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/SPSSDxe/SPSSDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/RmVmDxe/RmVmDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/OGaugeAuthDxe/OGaugeAuth.inf
+  INF Binaries/ktm/QcomPkg/Drivers/ParserDxe/ParserEnhancedDxe.inf
+  INF Binaries/ktm/QcomPkg/Drivers/SerialPortDxe/SerialPortDxe.inf
+  INF MdeModulePkg/Universal/PCD/Dxe/Pcd.inf

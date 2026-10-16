@@ -1,0 +1,44 @@
+#
+# Device Config for OnePlus Ace 6 (PLQ110) - SM8750 "sun"
+#
+# Derived from the device itself:
+#   ro.board.platform        = sun
+#   ro.boot.hardware         = qcom
+#   ro.soc.model             = SM8750
+#   ro.boot.product.vendor.sku / soc0      = sun / soc_id 618
+#   oplusboot.prjname        = 24851
+#   ro.build.version.release = 16
+#
+# The UEFI FD base/size mirror [Kernel]/[UEFI_FD] of the device's own XBL
+# memory map (xbl_config -> pakala overlay -> /memorymap), and must stay in
+# sync with the "UEFI_Stack" entry in
+# Platforms/OnePlus/ktmPkg/Library/MemoryMapLib/MemoryMapLib.c.
+#
+
+#
+# Boot Shim Configs
+#
+[boot_shim]
+requires_kernel_header = true
+
+#
+# UEFI FD Configs
+#
+[uefi_fd]
+base = 0xA7100000
+size = 0x300000
+
+#
+# Android Boot Image Kernel Configs
+#
+[boot_image_kernel]
+kernel_compression = "gzip"
+append_dtb         = true
+
+#
+# Android Boot Image Configs
+#
+[boot_image]
+header_version = 4
+os_version     = "16.0.0"
+os_patch_level = "2026-06"
